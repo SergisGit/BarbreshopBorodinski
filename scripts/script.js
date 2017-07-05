@@ -123,10 +123,10 @@ function photoChanging(event) {
 // Показать большие фотографии
 function galleryShow(event) {
 	event.preventDefault();
-	bigGallery.classList.add('show-block');
 	//чтобы большая картинка изначально не загружалась, в hnml src путое:
 	PhotosSrc = photoShowed.getAttribute('src').slice(0, -6) + '.jpg';
 	bigGalleryPhoto.setAttribute('src', PhotosSrc);
+	bigGallery.classList.add('show-block');
 	bigGallery.scrollIntoView(false);
 	window.scrollBy(0, 100);
 }
