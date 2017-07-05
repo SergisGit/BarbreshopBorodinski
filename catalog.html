@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Барбершоп Бородинский</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+</head>
+
+<body class="body-inner">
+
+	<div class="popup-overlay"></div>
+	<div class="popup-block">
+		<form action="https://echo.htmlacademy.ru" method="get" class="enter-form hidden-form">
+			<h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+			<p>ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ</p>
+
+			<div class="login">
+				<input type="text" name="login" placeholder="ЛОГИН" class="login-field">
+			</div>
+			<div class="password">
+				<input type="password" name="password" placeholder="ПАРОЛЬ" class="password-field">
+			</div>
+			<div class="clearfix">
+				<input type="checkbox" name="remember-user" checked id="remember-user">
+				<label for="remember-user">ЗАПОМНИТЕ МЕНЯ</label>
+				<a class="forgot-pass" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+			</div>
+			<button type="submit" name="enter-submit" class="btn">ВОЙТИ</button>
+			<a class="close-btn"></a>
+		</form>
+	</div>
+
+	<div class="wrapper">
+
+		<header class="main-header">
+			<div class="main-nav container flex">
+				<a href="index.html" class="index-href"><img src="img/Navigation-Logo.png" alt="ГЛАВНАЯ" width="111" height="24"></a>
+				<ul class="flex">
+					<li><a href="info.html">ИНФОРМАЦИЯ</a></li>
+					<li><a href="news.html">НОВОСТИ</a></li>
+					<li><a href="price.html">ПРАЙС-ЛИСТ</a></li>
+					<li><a href="catalog.html" class="href-active">МАГАЗИН</a></li>
+					<li><a href="index.html#contacts">КОНТАКТЫ</a></li>
+				</ul>
+				<div class="user-block">
+					<a href="personal.html" class="enter">ВХОД</a>
+				</div>
+			</div>
+		</header>
+
+		<div class="main">
+			<div class="container">
+
+				<h1>СРЕДСТВА ДЛЯ УХОДА</h1>
+				<div class="breadcrumbs">
+					<a href="index.html">ГЛАВНАЯ</a>
+					<a href="catalog.html">МАГАЗИН</a>
+					<span>СРЕДСТВА ДЛЯ УХОДА</span>
+				</div>
+
+				<div class="fle">
+					<form class="catalog-form" action="https://echo.htmlacademy.ru" method="post">
+						<fieldset>
+							<legend>ПРОИЗВОДИТЕЛИ:</legend>
+							<input type="checkbox" id="baxter" name="baxter" checked>
+							<label for="baxter">BAXTER OF CALIFORNIA</label>
+							<input type="checkbox" id="natty" name="natty">
+							<label for="natty">MR NATTY</label>
+							<input type="checkbox" id="suavecito" name="suavecito" checked>
+							<label for="suavecito">SUAVECITO</label>
+							<input type="checkbox" id="malin" name="malin">
+							<label for="malin">MALIN+GOETS</label>
+							<input type="checkbox" id="murray" name="murray" disabled>
+							<label for="murray">MURRAY'S</label>
+							<input type="checkbox" id="american" name="american" checked>
+							<label for="american">AMERICAL CREW</label>
+						</fieldset>
+
+						<fieldset class="fieldset-radio">
+							<legend>ГРУППЫ ТОВАРОВ:</legend>
+							<input type="radio" name="catalog-radio" id="shaving" value="shaving" checked>
+							<label for="shaving">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label>
+							<input type="radio" name="catalog-radio" id="care" value="care">
+							<label for="care">СРЕДСТВА ДЛЯ УХОДА</label>
+							<input type="radio" name="catalog-radio" id="accessories" value="accessories" disabled>
+							<label for="accessories">АКСЕССУАРЫ</label>
+						</fieldset>
+
+						<button type="submit" class="show-btn btn">ПОКАЗАТЬ</button>
+					</form>
+
+					<div class="catalog">
+						<div class="items-preview flex">
+							<article class="catalog-item">
+								<div class="catalog-item-description">
+									<a href="item-1.html">
+										<img src="img/catalog-item-1.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
+										<span class="item-category">Набор для путешествий</span>
+										<span class="item-title">«BAXTER OF CALIFORNIA»</span>
+									</a>
+								</div>
+								<div class="price-block">
+									<span>2900 РУБ.</span>
+									<a class="btn" href="#">КУПИТЬ</a>
+								</div>
+							</article>
+
+							<article class="catalog-item unavailable">
+								<div class="catalog-item-description">
+									<a href="#" class="unavailable">
+										<img src="img/catalog-item-2.jpg" width="220" height="165" alt="Увлажняющий кондиционер «Baxter of California»">
+										<span class="item-category">Увлажняющий кондиционер</span>
+										<span class="item-title">«BAXTER OF CALIFORNIA»</span>
+									</a>
+								</div>
+								<div class="price-block">
+									<span>750 РУБ.</span>
+									<a class="btn" href="#">КУПИТЬ</a>
+								</div>
+							</article>
+
+							<article class="catalog-item unavailable">
+								<div class="catalog-item-description">
+									<a href="#">
+										<img src="img/catalog-item-3.jpg" width="220" height="165" alt="Гель для волос «SUAVECITO»">
+										<span class="item-category">Гель для волос</span>
+										<span class="item-title">«SUAVECITO»</span>
+									</a>
+								</div>
+								<div class="price-block">
+									<span>290 РУБ.</span>
+									<a class="btn" href="#">КУПИТЬ</a>
+								</div>
+							</article>
+
+							<article class="catalog-item unavailable">
+								<div class="catalog-item-description">
+									<a href="#">
+										<img src="img/catalog-item-4.jpg" width="220" height="165" alt="Глина для укладки волос «American crew»">
+										<span class="item-category">Глина для укладки волос</span>
+										<span class="item-title">«AMERICAN CREW»</span>
+									</a>
+								</div>
+								<div class="price-block">
+									<span>500 РУБ.</span>
+									<a class="btn" href="#">КУПИТЬ</a>
+								</div>
+							</article>
+
+							<article class="catalog-item unavailable">
+								<div class="catalog-item-description">
+									<a href="#">
+										<img src="img/catalog-item-5.jpg" width="220" height="165" alt="Гель для волос «AMERICAN CREW»">
+										<span class="item-category">Гель для волос</span>
+										<span class="item-title">«AMERICAN CREW»</span>
+									</a>
+								</div>
+								<div class="price-block">
+									<span>300 РУБ.</span>
+									<a class="btn" href="#">КУПИТЬ</a>
+								</div>
+							</article>
+
+							<article class="catalog-item unavailable">
+								<div class="catalog-item-description">
+									<a href="#">
+										<img src="img/catalog-item-6.jpg" width="220" height="165" alt="Набор для бритья «Baxter of California»">
+										<span class="item-category">Набор для бритья</span>
+										<span class="item-title">«BAXTER OF CALIFORNIA»</span>
+									</a>
+								</div>
+								<div class="price-block">
+									<span>3900 РУБ.</span>
+									<a class="btn" href="#">КУПИТЬ</a>
+								</div>
+							</article>
+
+							<div class="unavailable-msg disactive">
+								<h2>Извините, товар времено отсутствует</h2>
+								<p>Нажмите в любом месте данного окна, чтобы закрыть.</p>
+							</div>
+
+						</div>
+
+						<div class="paginator">
+							<a class="btn" href="#">1</a>
+							<span class="btn current-page">2</span>
+							<a class="btn" href="#">3</a>
+							<a class="btn" href="#">4</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<footer class="main-footer">
+			<div class="container flex">
+				<div class="footer-contacts">
+					<p>БАРБЕРШОП «БОРОДИНСКИЙ»<br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+						<a href="#">КАК НАС НАЙТИ?</a><br> ТЕЛЕФОН: +7 (495) 666-02-66</p>
+				</div>
+				<div class="footer-socials">
+					<p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+					<a href="#" class="btn-social VK"></a>
+					<a href="#" class="btn-social FB"></a>
+					<a href="#" class="btn-social Inst"></a>
+				</div>
+				<div class="footer-copyright">
+					<p>РАЗРАБОТАНО</p>
+					<a href="https://htmlacademy.ru/" class="btn">HTMLACADEMY.RU</a>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="scripts/script.js"></script>
+</body>
+
+</html>

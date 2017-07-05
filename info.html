@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Барбершоп Бородинский</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+</head>
+
+<body class="body-inner">
+
+	<div class="popup-overlay"></div>
+	<div class="popup-block">
+		<form action="https://echo.htmlacademy.ru" method="get" class="enter-form hidden-form">
+			<h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+			<p>ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ</p>
+
+			<div class="login">
+				<input type="text" name="login" placeholder="ЛОГИН" class="login-field">
+			</div>
+			<div class="password">
+				<input type="password" name="password" placeholder="ПАРОЛЬ" class="password-field">
+			</div>
+			<div class="clearfix">
+				<input type="checkbox" name="remember-user" checked id="remember-user">
+				<label for="remember-user">ЗАПОМНИТЕ МЕНЯ</label>
+				<a class="forgot-pass" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+			</div>
+			<button type="submit" name="enter-submit" class="btn">ВОЙТИ</button>
+			<a class="close-btn"></a>
+		</form>
+	</div>
+
+	<div class="wrapper">
+
+		<header class="main-header">
+			<div class="main-nav container flex">
+				<a href="index.html" class="index-href"><img src="img/Navigation-Logo.png" alt="ГЛАВНАЯ" width="111" height="24"></a>
+				<ul class="flex">
+					<li><span class="href-active">ИНФОРМАЦИЯ</span></li>
+					<li><a href="news.html">НОВОСТИ</a></li>
+					<li><a href="price.html">ПРАЙС-ЛИСТ</a></li>
+					<li><a href="catalog.html">МАГАЗИН</a></li>
+					<li><a href="index.html#contacts">КОНТАКТЫ</a></li>
+				</ul>
+				<div class="user-block">
+					<a href="personal.html" class="enter">ВХОД</a>
+				</div>
+			</div>
+		</header>
+
+		<div class="main">
+			<div class="container">
+
+				<h1>ИНФОРМАЦИЯ</h1>
+				<div class="breadcrumbs">
+					<a href="index.html">ГЛАВНАЯ</a>
+					<span>ИНФОРМАЦИЯ</span>
+				</div>
+
+				<h2>Следите за нашими предложениями!</h2>
+				<p>Скоро мы вас порадуем</p>
+
+			</div>
+		</div>
+
+		<footer class="main-footer">
+			<div class="container flex">
+				<div class="footer-contacts">
+					<p>БАРБЕРШОП «БОРОДИНСКИЙ»<br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+						<a href="#">КАК НАС НАЙТИ?</a><br> ТЕЛЕФОН: +7 (495) 666-02-66</p>
+				</div>
+				<div class="footer-socials">
+					<p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+					<a href="#" class="btn-social VK"></a>
+					<a href="#" class="btn-social FB"></a>
+					<a href="#" class="btn-social Inst"></a>
+				</div>
+				<div class="footer-copyright">
+					<p>РАЗРАБОТАНО</p>
+					<a href="https://htmlacademy.ru/" class="btn">HTMLACADEMY.RU</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="scripts/script.js"></script>
+</body>
+
+</html>

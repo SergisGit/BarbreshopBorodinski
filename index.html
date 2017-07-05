@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Барбершоп Бородинский</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+</head>
+
+<body class="body-index">
+	
+	<div class="popup-overlay"></div>
+	<div class="popup-block">
+		<form action="https://echo.htmlacademy.ru" method="get" class="enter-form hidden-form">
+			<h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+			<p>ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ</p>
+
+			<div class="login">
+				<input type="text" name="login" placeholder="ЛОГИН" class="login-field">
+			</div>
+			<div class="password">
+				<input type="password" name="password" placeholder="ПАРОЛЬ" class="password-field">
+			</div>
+			<div class="clearfix">
+				<input type="checkbox" name="remember-user" checked id="remember-user">
+				<label for="remember-user">ЗАПОМНИТЕ МЕНЯ</label>
+				<a class="forgot-pass" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+			</div>
+			<button type="submit" name="enter-submit" class="btn">ВОЙТИ</button>
+			<div class="close-btn"></div>
+		</form>
+
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.198230653264!2d30.32746036492957!3d59.938794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sru!4v1499051809493" width="766" height="560" allowfullscreen></iframe>
+			<div class="close-btn"></div>
+		</div>
+
+		<form action="https://echo.htmlacademy.ru" method="get" class="enter-form msg-form">
+			<h2>ОБРАТНАЯ СВЯЗЬ</h2>
+			<p>ОСТАВЬТЕ НАМ СВОЁ СООБЩЕНИЕ,<br>МЫ ОБЯЗАТЕЛЬНО ОТВЕТИМ</p>
+
+			<input type="text" name="e-mail" placeholder="ВАШ E-MAIL" class="email-field" required>
+			<textarea name="message" rows="5" placeholder="ВВЕДИТЕ ТЕКСТ ВАШЕГО ОБРАЩЕНИЯ" required></textarea>
+
+			<button type="submit" name="enter-submit" class="btn">ОТПРАВИТЬ</button>
+			<div class="close-btn"></div>
+		</form>
+
+		<div class="big-gallery">
+			<img src="none.jpg" alt="Loading" class="big-gallery-photo">
+			<div class="close-btn"></div>
+		</div>
+
+	</div>
+
+	<div class="wrapper">
+
+		<header class="main-header">
+			<div class="main-nav container flex">
+				<ul class="flex">
+					<li><a href="info.html">ИНФОРМАЦИЯ</a></li>
+					<li><a href="news.html">НОВОСТИ</a></li>
+					<li><a href="price.html">ПРАЙС-ЛИСТ</a></li>
+					<li><a href="catalog.html">МАГАЗИН</a></li>
+					<li><a href="index.html#contacts">КОНТАКТЫ</a></li>
+				</ul>
+				<div class="user-block">
+					<a href="personal.html" class="enter">ВХОД</a>
+				</div>
+			</div>
+		</header>
+
+		<div class="main-index">
+			<div class="container">
+
+				<div class="logo">
+					<img src="img/index-logo.png" alt="logo" width="368" height="204">
+				</div>
+				<section class="features flex">
+					<div class="features-item">
+						<h2>БЫСТРО</h2>
+						<p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+					</div>
+					<div class="features-item">
+						<h2>КРУТО</h2>
+						<p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.<br>МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+					</div>
+					<div class="features-item">
+						<h2>ДОРОГО</h2>
+						<p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+					</div>
+				</section>
+
+				<section class="content-middle flex">
+					<div class="content-item content-news">
+						<h2>НОВОСТИ</h2>
+						<div class="content-container">
+							<ul>
+								<li>
+									<p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+									<time datetime="2017-09-25">25 Сентября</time>
+								</li>
+								<li>
+									<p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДЕТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+									<time datetime="2017-09-19">19 Сентября</time>
+								</li>
+							</ul>
+							<a href="news.html" class="btn">ВСЕ НОВОСТИ</a>
+						</div>
+					</div>
+					<div class="content-item content-gallery">
+						<h2>ФОТОГАЛЕРЕЯ</h2>
+						<div class="content-container">
+							<figure>
+								<a href="#" class="gallery-photo photo-showed"><img src="img/interior-1_s.jpg" alt="photo-1" width="286" height="164"></a>
+								<a href="#" class="gallery-photo"><img src="img/interior-2_s.jpg" alt="photo-2" width="286" height="164"></a>
+							</figure>
+							<div class="flex">
+								<button class="btn btn-prev">НАЗАД</button>
+								<button class="btn btn-next">ВПЕРЕД</button>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="content-bottom flex">
+					<div class="content-item content-contacts" id="contacts">
+						<h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+						<div class="content-container">
+							<p>
+								БАРБЕРШОП «БОРОДИНСКИЙ»<br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br> ТЕЛЕФОН: +7 (495) 666-02-66
+							</p>
+
+							<p>
+								ВРЕМЯ РАБОТЫ:<br> 
+								ПН — ПТ: С 10:00 ДО 22:00<br> 
+								СБ — ВС: С 10:00 ДО 19:00
+							</p>
+							<div class="flex">
+								<a href="#" class="btn address">КАК ПРОЕХАТЬ</a>
+								<a href="#" class="btn write-msg">ОБРАТНАЯ СВЯЗЬ</a>
+							</div>
+						</div>
+					</div>
+					<div class="content-item content-form">
+						<h2>ЗАПИСАТЬСЯ</h2>
+						<div class="content-container">
+							<p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С&nbsp;ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+							<form action="https://echo.htmlacademy.ru" method="post" class="flex">
+								<input type="text" name="date" placeholder="ДАТА" required>
+								<input type="text" name="time" placeholder="ВРЕМЯ" required>
+								<input type="text" name="name" placeholder="ВАШЕ ИМЯ" required>
+								<input type="tel" name="phone" placeholder="ТЕЛЕФОН" required>
+								<button type="submit" class="btn">ОТПРАВИТЬ</button>
+							</form>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</div>
+
+		<footer class="main-footer">
+			<div class="container flex">
+				<div class="footer-contacts">
+					<p>БАРБЕРШОП «БОРОДИНСКИЙ»<br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+						<a href="#">КАК НАС НАЙТИ?</a><br> ТЕЛЕФОН: +7 (495) 666-02-66</p>
+				</div>
+				<div class="footer-socials">
+					<p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+					<a href="#" class="btn-social VK"></a>
+					<a href="#" class="btn-social FB"></a>
+					<a href="#" class="btn-social Inst"></a>
+				</div>
+				<div class="footer-copyright">
+					<p>РАЗРАБОТАНО</p>
+					<a href="https://htmlacademy.ru/" class="btn">HTMLACADEMY.RU</a>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="scripts/script.js"></script>
+</body>
+
+</html>
