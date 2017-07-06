@@ -995,6 +995,9 @@ p.short-text {
 .catalog-item-description {
 	min-height: 227px;
 }
+.item-description span {
+	display: block;
+}
 
 .item-category,
 .item-title {
