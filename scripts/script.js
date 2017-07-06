@@ -101,9 +101,10 @@ function photoChanging(event) {
 // Показать большие фотографии
 function galleryShow(event) {
 	event.preventDefault();
-	//чтобы большая картинка изначально не загружалась, в hnml src путое:
+	//чтобы большая картинка изначально не загружалась, в hnml src ведёт к маленькой фото, исправим:
 	PhotosSrc = photoShowed.getAttribute('src').slice(0, -6) + '.jpg';
 	bigGalleryPhoto.setAttribute('src', PhotosSrc);
+	bigGallery.style.width = '940px';
 	bigGallery.classList.add('show-block');
 	bigGallery.scrollIntoView(false);
 	window.scrollBy(0, 100);

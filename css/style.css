@@ -512,7 +512,7 @@ input[type="radio"]:checked+label::before {
 	z-index: 25;
 	top: 920px;
 	left: 10px;
-	width: 940px;
+	width: 0;
 }
 
 .big-gallery img {
