@@ -1,44 +1,22 @@
 var	popupOverlay = document.querySelector('.popup-overlay'),
-	enter = document.querySelector('.enter'),
 	hiddenForm = document.querySelector('.hidden-form'),
-	login = document.querySelector('.login-field'),
-	password = document.querySelector('.password-field'),
-	storageName = localStorage.getItem('login'),
+	gallery = document.querySelector('.content-gallery'),
+	mapBlock = document.querySelector('.map'),
+	msgForm = document.querySelector('.msg-form'),
 	close = document.querySelectorAll('.close-btn'),
 
-	mapBlock = document.querySelector('.map'),
-	address = document.querySelector('.address'),
-
-	gallery = document.querySelector('.content-gallery'),
-	bigGallery = document.querySelector('.big-gallery'),
-	galleryPhotos = document.querySelectorAll('.gallery-photo'),
-	bigGalleryPhoto = document.querySelector('.big-gallery-photo'),
-	photoShowed = document.querySelector('.photo-showed img'),
-	mainIndex = document.querySelector('.main-index'),
-	PhotosSrc,
-
-	msgForm = document.querySelector('.msg-form'),
-	writeMsg = document.querySelector('.write-msg'),
-	emailField = document.querySelector('.email-field'),
-
 	photoBig = document.querySelector('.photo-big'),
-	photosSmall = document.querySelectorAll('.photo-small'),
-
-	unavailable = document.querySelectorAll('.unavailable'),
 	unavailableMSG = document.querySelector('.unavailable-msg'),
-	newIMG,
-
-	gallery,
-	btn,
-	photos,
-
-	showed,
-	indexOfShowed,
 
 	i;
 
 // Вывод формы входа
 if (hiddenForm) {
+	var enter = document.querySelector('.enter'),
+		login = hiddenForm.querySelector('.login-field'),
+		password = hiddenForm.querySelector('.password-field'),
+		storageName = localStorage.getItem('login');	
+			
 	enter.addEventListener('click', function (event) {
 		event.preventDefault();
 		popupOverlay.classList.add('show-block');
@@ -94,8 +72,8 @@ if (hiddenForm) {
 // Переключение фотографий галереи на главной странице
 function photoChanging(event) {
 	event.preventDefault();
-	showed = document.getElementsByClassName('gallery-photo photo-showed');
-	indexOfShowed = photos.indexOf(showed[0]);
+	var showed = document.getElementsByClassName('gallery-photo photo-showed'),
+		indexOfShowed = photos.indexOf(showed[0]);
 
 
 	if ((this.className === 'btn btn-next') && (indexOfShowed < (photos.length - 1))) {
@@ -132,9 +110,15 @@ function galleryShow(event) {
 }
 
 if (gallery) {
-	btn = gallery.querySelectorAll('.btn');
-	photos = Array.prototype.slice.call(document.querySelectorAll('.gallery-photo'));
-
+	var mainIndex = document.querySelector('.main-index'),
+	bigGallery = document.querySelector('.big-gallery'),
+	bigGalleryPhoto = bigGallery.querySelector('.big-gallery-photo'),	
+	galleryPhotos = gallery.querySelectorAll('.gallery-photo'),
+	photoShowed = gallery.querySelector('.photo-showed img'),
+	btn = gallery.querySelectorAll('.btn'),
+	photos = Array.prototype.slice.call(gallery.querySelectorAll('.gallery-photo')),
+	PhotosSrc;
+	
 	for (i = 0; i < btn.length; i += 1) {
 		btn[i].addEventListener('click', photoChanging);
 	}
@@ -156,11 +140,11 @@ if (gallery) {
 			bigGallery.classList.remove('show-block');
 		}
 	});
-
 }
 
 // Показать карту
 if (mapBlock) {
+	var address = document.querySelector('.address');
 	address.addEventListener('click', function (event) {
 		event.preventDefault();
 		popupOverlay.classList.add('show-block');
@@ -187,6 +171,8 @@ if (mapBlock) {
 
 // Показать окно обратной связи
 if (msgForm) {
+	var writeMsg = document.querySelector('.write-msg'),
+		emailField = msgForm.querySelector('.email-field');
 	writeMsg.addEventListener('click', function (event) {
 		event.preventDefault();
 		popupOverlay.classList.add('show-block');
@@ -236,6 +222,7 @@ function unavailableOpening(event) {
 }
 
 if (unavailableMSG) {
+	var unavailable = document.querySelectorAll('.unavailable');
 	for (i = 0; i < unavailable.length; i += 1) {
 		unavailable[i].addEventListener('click', unavailableOpening);
 	}
@@ -257,10 +244,11 @@ if (unavailableMSG) {
 
 // Переключение большого фото товара
 function bigPhotoChanging() {
-	newIMG = this.getAttribute('src').slice(0, -6) + '.jpg';
+	var newIMG = this.getAttribute('src').slice(0, -6) + '.jpg';
 	photoBig.setAttribute('src', newIMG);
 }
 if (photoBig) {
+	var photosSmall = document.querySelectorAll('.photo-small');
 	for (i = 0; i < photosSmall.length; i += 1) {
 		photosSmall[i].addEventListener('click', bigPhotoChanging);
 	}
