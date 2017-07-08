@@ -150,10 +150,10 @@
 						<div class="content-container">
 							<p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С&nbsp;ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
 							<form action="https://echo.htmlacademy.ru" method="post" class="flex">
-								<input type="text" name="date" placeholder="ДАТА" required>
-								<input type="text" name="time" placeholder="ВРЕМЯ" required>
-								<input type="text" name="name" placeholder="ВАШЕ ИМЯ" required>
-								<input type="tel" name="phone" placeholder="ТЕЛЕФОН" required>
+								<input type="text" name="date" placeholder="ДАТА	дд/мм" required pattern="(0{0,1}[1-9]|[12][0-9]|3[01])[\.\/](0[1-9]|1[012])">
+								<input type="text" name="time" placeholder="ВРЕМЯ	 чч:мм" required pattern="(\d|[0-1]\d|2[0-3])[:]([0-5]\d)">
+								<input type="text" name="name" placeholder="ВАШЕ ИМЯ" required pattern="[А-Яа-яЁёA-Za-z]{2,}">
+								<input type="tel" name="phone" placeholder="ТЕЛЕФОН" required pattern="+{0,1}[\d() -]{5,17}">
 								<button type="submit" class="btn">ОТПРАВИТЬ</button>
 							</form>
 						</div>
